@@ -263,8 +263,10 @@ Após a revisão do código, foram implementadas as seguintes melhorias:
 
 A atividade permitiu aplicar conceitos importantes de Teste de Caixa Branca e revisão estática de código.
 
-Durante a análise foram identificadas falhas relacionadas à segurança, tratamento de exceções, organização e manutenção do sistema. A modelagem do fluxo de execução e o cálculo da complexidade ciclomática possibilitaram compreender melhor os caminhos internos percorridos pela aplicação.
+Durante a análise foram identificadas falhas relacionadas à segurança, tratamento de exceções, organização e manutenção do sistema. A modelagem do fluxo de execução, por meio dos grafos, juntamente com o cálculo da complexidade ciclomática, possibilitou compreender de forma mais clara os caminhos internos percorridos pela aplicação.
 
-A revisão do código demonstrou a importância das boas práticas de desenvolvimento, especialmente em sistemas que realizam autenticação de usuários e acesso a banco de dados.
+A identificação dos caminhos básicos reforçou a importância da cobertura de testes, garantindo que todos os fluxos relevantes do sistema sejam validados.
 
-Além disso, a atividade reforçou a relevância da qualidade de software, da manutenção preventiva e da aplicação de testes estruturais para a construção de sistemas mais seguros, organizados e confiáveis.
+A revisão do código demonstrou a importância da aplicação de boas práticas de desenvolvimento, especialmente em sistemas que realizam autenticação de usuários e acesso a banco de dados, onde falhas podem comprometer a segurança da informação.
+
+Além disso, a atividade evidenciou a relevância da qualidade de software, da manutenção preventiva e da aplicação de testes estruturais como fatores essenciais para a construção de sistemas mais seguros, organizados e confiáveis.
