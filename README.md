@@ -115,8 +115,6 @@ As principais más práticas encontradas foram:
 
 O grafo de fluxo foi desenvolvido com o objetivo de representar visualmente o fluxo lógico de execução dos métodos `conectarBD()` e `verificarUsuario()`.
 
-
-
 O diagrama permite identificar:
 
 * fluxo principal;
@@ -167,11 +165,39 @@ V(G) = 1 + 2
 
 ## 5. Caminhos Básicos
 
-### Caminho 1 – Usuário Não Encontrado
+### Método conectarBD
+#### Caminho 1 – Usuário Não Encontrado
 
-```text
+1 - 2 - 3 - 5
+
+Conexão com o banco realizada com sucesso.
+
+Fluxo:
+
+* inicializa conexão;
+* executa bloco `try`;
+* conecta ao banco;
+* retorna conexão válida.
+
+#### Caminho 2 – Usuário Não Encontrado
+
+1 - 2 - 4 - 5
+
+Ocorre erro durante a tentativa de conexão.
+
+Fluxo:
+
+* inicializa conexão;
+* entra no `try`;
+* ocorre exceção;
+* executa o `catch`;
+* retorna conexão `null`.
+
+### Método verificarUsuario
+#### Caminho 1 – Usuário Não Encontrado
+
 1 - 2 - 3 - 4 - 5 - 6 - 9
-```
+
 O sistema executa a consulta, porém não encontra registros no banco.
 
 Fluxo:
@@ -182,11 +208,10 @@ Fluxo:
 * a condição `rs.next()` retorna falso;
 * o método retorna `false`.
 
-### Caminho 2 – Usuário encontrado
+#### Caminho 2 – Usuário encontrado
 
-```text
 1 - 2 - 3 - 4 - 5 - 6 - 7 - 9
-```
+
 O sistema encontra o usuário no banco de dados.
 
 Fluxo:
@@ -199,11 +224,10 @@ Fluxo:
 * o resultado é definido como `true`
 * o método retorna `true`.
 
-### Caminho 3 – Exceção na Conexão
+#### Caminho 3 – Exceção na Conexão
 
-```text
 1 - 2 - 3 - 4 - 8 - 9
-```
+
 Ocorre um erro durante a execução da consulta ou conexão.
 
 Fluxo:
@@ -213,21 +237,6 @@ Fluxo:
 * ocorre exceção;
 * o fluxo segue para o bloco `catch`;
 * o método retorna valor padrão `false`.
-
-### Caminho 4 – Exceção na Consulta
-
-Fluxo:
-
-* conexão realizada;
-* falha durante a execução da consulta;
-* execução do bloco catch;
-* retorno falso.
-
-Resultado esperado:
-
-```text
-false
-```
 
 ---
 
