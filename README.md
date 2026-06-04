@@ -115,6 +115,8 @@ As principais más práticas encontradas foram:
 
 O grafo de fluxo foi desenvolvido com o objetivo de representar visualmente o fluxo lógico de execução dos métodos `conectarBD()` e `verificarUsuario()`.
 
+![Grafos](Grafo Classe User.png)
+
 O diagrama permite identificar:
 
 * fluxo principal;
