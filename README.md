@@ -1,6 +1,6 @@
 # Análise Estrutural de Código Java – Teste de Caixa Branca
 
-## 1. Introdução
+## Introdução
 
 Este projeto tem como objetivo realizar uma análise estrutural completa de um código Java responsável pela autenticação de usuários por meio de conexão com banco de dados.
 
@@ -8,7 +8,7 @@ A atividade foi desenvolvida aplicando conceitos de Teste de Caixa Branca, revis
 
 ---
 
-## 2. Análise Estática do Código
+## Análise Estática do Código
 
 ### Documentação
 
@@ -111,7 +111,7 @@ As principais más práticas encontradas foram:
 
 ---
 
-## 3. Grafo de Fluxo
+## Grafo de Fluxo
 
 O grafo de fluxo foi desenvolvido com o objetivo de representar visualmente o fluxo lógico de execução dos métodos `conectarBD()` e `verificarUsuario()`.
 
@@ -137,7 +137,7 @@ Por fim, o método retorna o resultado da verificação do usuário.
 
 ---
 
-## 4. Complexidade Ciclomática
+## Complexidade Ciclomática
 
 A complexidade ciclomática foi calculada utilizando a fórmula:
 
@@ -165,7 +165,7 @@ V(G) = 1 + 2
 
 ---
 
-## 5. Caminhos Básicos
+## Caminhos Básicos
 
 ### Método conectarBD
 #### Caminho 1 – Usuário Não Encontrado
@@ -242,7 +242,7 @@ Fluxo:
 
 ---
 
-## 6. Melhorias Implementadas
+## Melhorias Implementadas
 
 Após a revisão do código, foram implementadas as seguintes melhorias:
 
@@ -259,7 +259,7 @@ Após a revisão do código, foram implementadas as seguintes melhorias:
 
 ---
 
-## 7. Conclusão
+## Conclusão
 
 A atividade permitiu aplicar conceitos importantes de Teste de Caixa Branca e revisão estática de código.
 
